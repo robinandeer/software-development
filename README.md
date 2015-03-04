@@ -3,6 +3,8 @@ General guidelines and style guide for software developed at SciLifeLab.
 
 I think we'll start with software development and see if we branch out enough to discuss if we should switch the name of the repository.
 
+> Reason for forking: I started this project at SciLifeLab but I think I'm still the only contributor so this is really more of my own collection of best practices :sweat_smile:
+
 
 ## Idea
 The guide should clearly separate between 1) *conventions* :green_apple:, 2) *best practices* :gem:, and 3) *helpful tools* :gift_heart:. Try to mark each paragraph or suggestion with it's corresponding emoji (before the reference).
