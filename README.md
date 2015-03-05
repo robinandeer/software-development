@@ -1,7 +1,7 @@
 # software-development
-General guidelines and style guide for software developed at SciLifeLab.
+My personal take on general guidelines and style guide for software development.
 
-I think we'll start with software development and see if we branch out enough to discuss if we should switch the name of the repository.
+I'll start with software development and see if it branches out enough to warrant a repo re-naming.
 
 > Reason for forking: I started this project at SciLifeLab but I think I'm still the only contributor so this is really more of my own collection of best practices :sweat_smile:
 
