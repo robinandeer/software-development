@@ -107,13 +107,15 @@ h3 {
 
 .site-title {
 	display: block;
-	padding: 1em 1em .4em;
+	padding: 1em;
 	border-bottom: 1px solid #d8dae3;
 }
 
 .site-title > img {
+	display: block;
+	margin: 0 auto;
 	width: auto;
-	height: 3em;
+	height: 5em;
 }
 
 .page-link {
