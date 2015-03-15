@@ -53,6 +53,10 @@ def grep(pattern, line):
 Find out [how to document functions][google-docstrings] in your language and stick to accepted conventions.
 
 
+## Change log
+Follow this [opinionated standard][keepachangelog] dubbed "Keep a CHANGELOG". Basically it should be written in Markdown, mark each release with a version and date, and clearly separate between different categories of changes.
+
+
 ## Flowcharts
 :green_apple: Flowcharts can convey overview in ways that is impossible to put into words. It can be a great way to organize e.g. a pipeline of functions that will help you in the design of your project.
 
@@ -65,3 +69,4 @@ A great, dedicated flow chart creation tool is :gift_heart: [Delineato][delineat
 [most-important-doc]: http://zachholman.com/posts/documentation/
 [delineato]: http://www.delineato.com/
 [keynote]: https://www.apple.com/mac/keynote/
+[keepachangelog]: http://keepachangelog.com/
