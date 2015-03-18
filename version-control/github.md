@@ -18,6 +18,15 @@ Something more complex like [GitFlow][gitflow] could be a better fit for a proje
 To learn more, read the [original article][original], watch the rather entertaining [extended brief][video], or skim the [summary][summary] on the official GitHub blog. And remember the [introduction to GitHub][intro] mentioned above? That's in fact a pretty spot on description of the workflow in under 5 minutes. That simple.
 
 
+## When and how to rebase
+According to good practice *GitHub Flow*, opening pull requests early is encouraged. When multiple people are working on the same repo, this will cause some pull requests to go stale as others are merged into ``master``. Before merging stale branches, they should be rebased onto the remote ``upstream/master`` branch.
+
+Perform the rebase according to this [excellent guide][rebase] by [edX][edx]. It also does a great job of explaining why rebasing is prefferable to a merge.
+
+
+
+[edx]: https://open.edx.org/
+[rebase]: https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request
 [intro]: https://guides.github.com/introduction/flow/index.html
 [original]: http://scottchacon.com/2011/08/31/github-flow.html
 [video]: http://zachholman.com/talk/how-github-uses-github-to-build-github/
