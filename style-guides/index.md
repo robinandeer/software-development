@@ -8,6 +8,8 @@ Style Guides are meant to bring developers with many different backgrounds under
 ## Languages
 
 - [Python][python]
+- [CSS][css]
 
 
+[css]: {{ site.baseurl }}/style-guides/css/
 [python]: {{ site.baseurl }}/style-guides/python/

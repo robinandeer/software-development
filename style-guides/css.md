@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS
-permalink: /css/
+permalink: /style-guides/css/
 ---
 
 ## Cascading Style Sheets
