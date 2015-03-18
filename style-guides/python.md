@@ -4,10 +4,55 @@ title: Style Guides &rsaquo; Python
 permalink: /style-guides/python/
 ---
 
+> Code is read much more often than it is written. - A Wise Pythonista
+
 :gem: [PEP8][pep8] and :gem: [PEP20][pep20] (``import this``) should be considered as the starting points. Unless specified otherwise, we follow the guidelines laid out there. For a brief overview, read the [Python Guide][python-guide#style]'s entry on the subject.
 
-## PEP8 exceptions
-1. :green_apple: Indentation. You can use 2 or 4 *spaces* to indent code. The most important point is not to mix and match in any given project. Never use hard tabs.
+
+## PEP8 clarifications and tips
+The official guide has some very nice tips on [code layout][code-layout]. This can be a nice reference when you are unsure about how to e.g. style your hanging indents.
+
+### Indentation
+:green_apple: Use 4 *spaces* to indent code. Never use hard tabs. Spaces are preferred over tabs for the following reason: spaces are spaces on every editor on every operating system. Tabs can be configured to act as 2, 4, 8 "spaces" and this can make code unreadable when being shared.
+
+### Maximum line length
+Limit all lines to a maximum of 79 characters. Break down the line if it exceeds the maximum length. For example:
+
+{% highlight python %}
+# Python automatically concatenates consecutive strings
+a_long_string = ("I am a very long string that can be split across"
+                 "multiple lines by automatic string concatenation.")
+
+# multi conditional if-statements can be split into multiple statements
+# notice how the code reads a lot like regular English!
+first_condition = 'genius' in 'Paul Thomas Anderson'
+second_condition = 'genius' in 'Daniel Day-Lewis'
+
+if first_condition and second_condition:
+  print('And the Oscar goes to... There Will Be Blood!')
+{% endhighlight %}
+
+### Imports
+I like to split up imports into three seprate groups: 1. standard library imports, 2. third party imports, 3. intra-package imports.
+
+{% highlight python %}
+import os
+import re
+
+import numpy as np
+from path import path
+
+from .utils import read_config
+
+{% endhighlight %}
+
+There are also another category of imports known as "future imports". They exist to bridge the gap between Python 2 and 3. It's important to realize that they only effect the current module they are present in. Future imports must be at the top of your Python module file. I make it a habit of putting the following lines at the top of every module I write:
+
+{% highlight python %}
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals, division
+{% endhighlight %}
+
 
 ## Installation
 All packages should be installable through pip by running (inside project root):
@@ -75,6 +120,7 @@ Another resource that can greatly ease collaboration is :gift_heart: [EditorConf
 
 [pep8]: http://legacy.python.org/dev/peps/pep-0008/
 [pep20]: http://legacy.python.org/dev/peps/pep-0020/
+[code-layout]: http://legacy.python.org/dev/peps/pep-0008/#code-lay-out
 [pyflakes]: https://pypi.python.org/pypi/pyflakes
 [flake8]: https://pypi.python.org/pypi/flake8
 [entry-points]: http://pythonhosted.org/setuptools/pkg_resources.html#entry-points
