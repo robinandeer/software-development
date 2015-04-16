@@ -15,6 +15,7 @@ The ``production`` [conda environment][conda] is loaded automatically as default
 $ source activate [develop]
 {% endhighlight %}
 
-
+Here's a [very nice reference][format]/mini tutorial on the format mini-language used for string formatting in Python.
 
 [conda]: /software-development/environment/#installing-python
+[format]: http://pyformat.info/
